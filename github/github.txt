@@ -1,0 +1,32 @@
+.Git hub
+
+01) git init
+02) git config --global user.name "kasun"
+03) git config --global user.email "kasunnrathnayke@gmail.com"
+04) touch index.html //create file html
+05) git add . //add all file 
+06) git add index.html //add one file
+07) git status
+08) after that turn to html create html file "SEUSL"
+09) git add .
+10) git commit
+	thet press "shift+i" type massage then press "Esc" then press "shift+:" then type "wq" enter
+11) git add .
+12) git status
+13)  git commit -m 'i have created project for you'
+14) git init
+ create to branch
+15) git branch
+16) git branch test //create branch 
+17) git branch //test branch
+18) git switch test //change branch to test
+19) git checkout master//change test branch to master branch
+20) git branch //see you create branch
+	then go to git hub create file and copy you file "URL"
+21) git add origin
+22) git remote add origin https://github.com/kasun245/test.git
+23) git remote -v //see you fill
+24) git push -f origin master //upload file git hub
+
+
+ 

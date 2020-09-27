@@ -1,0 +1,42 @@
+<?php
+
+interface Shape{
+public function get_Area();
+}
+
+class Squre implements Shape{
+private $width;
+
+public function __construct($width){
+$this->width = $width;
+}
+
+public function get_Area(){
+return $this->width * $this->width;
+}
+}
+
+class Circle implements Shape{
+private $r;
+
+public function __construct($r){
+$this->r = $r;
+}
+
+public function get_Area(){
+return 3.14 * $this->r * $this->r;
+}
+}
+
+
+function calculate_Area(Shape $shape){
+return $shape->get_Area();
+}
+
+echo "Area of Circle :  ";
+echo calculate_Area(new Circle(7));
+echo "<br>";
+echo "Area of Squre:  ";
+echo calculate_Area(new Squre(5));
+
+?>

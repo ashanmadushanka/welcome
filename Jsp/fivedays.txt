@@ -1,0 +1,40 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.*"%>
+<%int day=5; %>
+    <%! String days[]={"Monday","Tuesday","Wednesday","Thurseday","Friday"};%>
+    <% int FontSize; %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <%Date date=new Date();%>
+    
+    <body>
+        <h1>Today's : </h1>
+        <h1>Today's date is: <%=date%></h1>
+        <%
+            if(day==6 || day==7)
+            {
+                out.println("Weekend");
+            }
+            else{
+                out.println("Weekday");
+            }
+        %>
+        </br>
+        <%
+            for(FontSize=1; FontSize<=5; FontSize++)
+            {%>
+            <font color ="Green " Size="<%=FontSize%>">
+            <%out.print(days[FontSize-1]); %>
+            </font></br>
+            <%
+                }
+            %>
+                
+            }
+        %>
+    </body>
+</html>
